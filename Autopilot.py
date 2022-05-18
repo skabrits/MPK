@@ -4,7 +4,7 @@ import numpy as np
 
 
 class Uav:
-    def __init__(self, r, surface_distance, angle, v_earth, v_air, rpm, current, voltage, temperature, *args, **kwargs):
+    def __init__(self, r, surface_distance, angle, v_earth, v_air, rpm=0, current=0, voltage=0, temperature=0, *args, **kwargs):
         self.r = np.array(r) if len(np.array(r)) != 0 else np.array(r).reshape(1,)
         self.surface_distance = np.array(surface_distance) if len(np.array(surface_distance)) != 0 else np.array(surface_distance).reshape(1,)
         self.angle = np.array(angle) if len(np.array(angle)) != 0 else np.array(angle).reshape(1,)
@@ -17,6 +17,13 @@ class Uav:
         self.args = np.array(args) if len(np.array(args)) != 0 else np.array(args).reshape(1,)
         for i in kwargs.keys():
             exec("self." + str(i) + " = np.array(kwargs[i]) if len(np.array(kwargs[i])) != 0 else np.array(kwargs[i]).reshape(1,)")
+        self.params = kwargs
+    def
+
+
+class TiltWing (Uav):
+    def __init__(self):
+        super().__init__()
 
 
 class AutopilotModule:
