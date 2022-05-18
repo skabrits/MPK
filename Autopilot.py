@@ -12,8 +12,8 @@ class Uav:
         self.v_air = np.array(v_air) if len(np.array(v_air)) != 0 else np.array(v_air).reshape(1,)
         self.rpm = np.array(rpm) if len(np.array(rpm)) != 0 else np.array(rpm).reshape(1,)
         self.current = np.array(current) if len(np.array(current)) != 0 else np.array(current).reshape(1,)
-        self.voltage = np.array(args) if len(np.array(args)) != 0 else np.array(args).reshape(1,)
-        self.temperature = np.array(args) if len(np.array(args)) != 0 else np.array(args).reshape(1,)
+        self.voltage = np.array(voltage) if len(np.array(voltage)) != 0 else np.array(voltage).reshape(1,)
+        self.temperature = np.array(temperature) if len(np.array(temperature)) != 0 else np.array(temperature).reshape(1,)
         self.args = np.array(args) if len(np.array(args)) != 0 else np.array(args).reshape(1,)
         for i in kwargs.keys():
             exec("self." + str(i) + " = np.array(kwargs[i]) if len(np.array(kwargs[i])) != 0 else np.array(kwargs[i]).reshape(1,)")
