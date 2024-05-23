@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MF0 version="1.1" packageUris="http://schema.mathworks.com/mf0/SlsaMaskTree/R2020a">
+  <slsa.mm.maskTree.MaskTree type="slsa.mm.maskTree.MaskTree" uuid="44894218-290e-48a9-b5aa-c19a67f1b50f">
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="bd40baac-c8d4-42f5-8ffd-76f335cf212d">
+      <blockPath>graphic_plane/FlightGear Preconfigured 6DoF Animation</blockPath>
+      <childrenIds>graphic_plane:1:8</childrenIds>
+      <id>graphic_plane:1</id>
+      <masks type="slsa.mm.maskTree.Mask" uuid="f82f0c6e-38ba-4565-9929-8d4f500cafcb">
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="e124f8bf-3809-4c80-bee2-5d36272a5156">
+          <expression>v2019.1</expression>
+          <name>xFlightGearVersion</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="effabcb4-6978-4831-950c-20734207691e">
+          <expression>127.0.0.1</expression>
+          <name>DestinationIpAddress</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="60d78c76-aee2-4a88-a2cb-bdab57320105">
+          <evaluate>true</evaluate>
+          <expression>5502</expression>
+          <isTunable>true</isTunable>
+          <name>DestinationPort</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="d85d9e86-09e0-4fa7-a7eb-78560f66f0aa">
+          <evaluate>true</evaluate>
+          <expression>1/30</expression>
+          <name>SampleTime</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="880ca1e7-1c12-45e1-aa35-935f42af08ed">
+          <expression>24</expression>
+          <isTunable>true</isTunable>
+          <name>packetVersion</name>
+        </dialogParameters>
+        <initializationCode>aeroicon(&apos;aeroblkfgsend&apos;);
+
+</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>root</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="0c5b3c7b-a39c-420c-833d-9550b7de6292">
+      <blockPath>graphic_plane/FlightGear Preconfigured 6DoF Animation/Simulation Pace</blockPath>
+      <id>graphic_plane:1:8</id>
+      <masks type="slsa.mm.maskTree.Mask" uuid="1cbb7f7c-d8e1-4d28-9b50-2ea7adcda5bd">
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="2b44d754-c349-4399-9fbe-7b6a0ebde5a6">
+          <evaluate>true</evaluate>
+          <expression>1</expression>
+          <name>SimulationPace</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="22dec3e0-b0cf-4a0e-baee-b33aa0f42832">
+          <evaluate>true</evaluate>
+          <expression>4</expression>
+          <name>SleepMode</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="e74cb739-9d22-48bd-b4b5-fcc310951bfe">
+          <evaluate>true</evaluate>
+          <expression>0</expression>
+          <name>OutputPaceError</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="757006a8-31b6-4616-93a4-db253ddc2e0e">
+          <evaluate>true</evaluate>
+          <expression>SampleTime</expression>
+          <name>SampleTime</name>
+          <referencedVariables type="slsa.mm.maskTree.Variable" uuid="46cf7d0b-6b28-496a-af18-5c47bd2c26bf">
+            <name>SampleTime</name>
+            <value></value>
+            <workspace>graphic_plane:1</workspace>
+          </referencedVariables>
+        </dialogParameters>
+        <initializationCode>aeroicon(&apos;aeroblkpacer&apos;);</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>graphic_plane:1</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="81ea295f-f1ac-48e5-9da1-bd777d21edfa">
+      <blockPath>graphic_plane/Flat Earth to LLA</blockPath>
+      <childrenIds>graphic_plane:4:108</childrenIds>
+      <childrenIds>graphic_plane:4:108:750</childrenIds>
+      <childrenIds>graphic_plane:4:108:750:772</childrenIds>
+      <childrenIds>graphic_plane:4:108:771</childrenIds>
+      <childrenIds>graphic_plane:4:108:771:722</childrenIds>
+      <childrenIds>graphic_plane:4:108:771:722:772</childrenIds>
+      <childrenIds>graphic_plane:4:108:771:754</childrenIds>
+      <childrenIds>graphic_plane:4:109</childrenIds>
+      <childrenIds>graphic_plane:4:109:750</childrenIds>
+      <childrenIds>graphic_plane:4:109:750:772</childrenIds>
+      <childrenIds>graphic_plane:4:109:771</childrenIds>
+      <childrenIds>graphic_plane:4:109:771:722</childrenIds>
+      <childrenIds>graphic_plane:4:109:771:722:772</childrenIds>
+      <childrenIds>graphic_plane:4:109:771:754</childrenIds>
+      <id>graphic_plane:4</id>
+      <masks type="slsa.mm.maskTree.Mask" uuid="2d854e4b-df0c-4917-abc4-5987fd4602df">
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="1ce209a6-f18d-41cc-b84f-31b597775a40">
+          <expression>Metric (MKS)</expression>
+          <name>units</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="19a4029c-64c8-4424-9cf2-c1d5cf208e44">
+          <expression>Earth (WGS84)</expression>
+          <name>ptype</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="9635e450-08ca-4ef4-9726-c5c88675d535">
+          <evaluate>true</evaluate>
+          <expression>1/298.257223563</expression>
+          <isTunable>true</isTunable>
+          <name>F</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="dc158e07-063d-4b13-87dd-d1d106e2fa94">
+          <evaluate>true</evaluate>
+          <expression>6378137</expression>
+          <isTunable>true</isTunable>
+          <name>R</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="9683794e-fb00-4bbb-bad8-b05e6a208f9d">
+          <evaluate>true</evaluate>
+          <expression>0</expression>
+          <isTunable>true</isTunable>
+          <name>refPosPort</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="9893118d-2c28-4e73-808e-81dc5616353b">
+          <evaluate>true</evaluate>
+          <expression>[34.91 -117.8912]</expression>
+          <isTunable>true</isTunable>
+          <name>LL0</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="c27a756b-7279-4d3e-8c83-0eb8514460e0">
+          <evaluate>true</evaluate>
+          <expression>0</expression>
+          <isTunable>true</isTunable>
+          <name>psi</name>
+        </dialogParameters>
+        <initializationCode>ports = aeroicon(&apos;aeroblklla&apos;);</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>root</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="f584b9d0-1fdb-444f-9ccb-bf3e2b7170a4">
+      <blockPath>graphic_plane/Flat Earth to LLA/LatLong wrap</blockPath>
+      <id>graphic_plane:4:108</id>
+      <masks type="slsa.mm.maskTree.Mask" uuid="679a8888-b683-4e03-bb08-afbeccbfd950">
+        <initializationCode>aeroicon(&apos;aeroblk&apos;)</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>graphic_plane:4</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="c0bd798d-469b-412b-b917-22a5ec8334c0">
+      <blockPath>graphic_plane/Flat Earth to LLA/LatLong wrap/Wrap Longitude</blockPath>
+      <id>graphic_plane:4:108:750</id>
+      <masks type="slsa.mm.maskTree.Mask" uuid="e216bee8-d7be-4117-b5bf-b6199dfe08ce">
+        <initializationCode>aeroicon(&apos;aeroblk&apos;);</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>graphic_plane:4</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="193a53d6-da85-435f-9976-7581c8b17a5f">
+      <blockPath>graphic_plane/Flat Earth to LLA/LatLong wrap/Wrap Longitude/Compare To Constant</blockPath>
+      <id>graphic_plane:4:108:750:772</id>
+      <masks type="slsa.mm.maskTree.Mask" uuid="8c30fd2a-4106-4e84-b228-61dd015a7009">
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="559033f1-75c7-4cc7-969f-0e635d390dd0">
+          <expression>&gt;</expression>
+          <name>relop</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="4b6c1d6e-4a50-4f60-9c65-71c1d9e16450">
+          <evaluate>true</evaluate>
+          <expression>180</expression>
+          <isTunable>true</isTunable>
+          <name>const</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="bf04dbc7-546e-4297-9a41-bd0291e9507c">
+          <expression>boolean</expression>
+          <name>OutDataTypeStr</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="7b7aee86-46e0-423b-bc17-74dc5f0594d0">
+          <expression>on</expression>
+          <name>ZeroCross</name>
+        </dialogParameters>
+        <initializationCode>blkName = gcb;
+
+if strcmp(get_param(gcbh,&apos;OutDataTypeStr&apos;),&apos;boolean&apos;)
+	setValue = &apos;boolean&apos;;
+else
+	setValue = &apos;fixdt(0, 8, 0)&apos;;
+end
+
+set_param([blkName,&apos;/Compare&apos;],&apos;relop&apos;,relop, ...
+	&apos;OutDataTypeStr&apos;, setValue, &apos;ZeroCross&apos;, ZeroCross);
+
+str = [relop,&apos; C&apos;]; %default
+
+const_str = get_param(blkName, &apos;const&apos;);
+const_val = str2num(const_str);
+
+if isempty(const_val) %#ok&lt;ST2NM&gt;
+    %Expression/Variable
+    str = [relop, &apos; &apos;, strtrim(const_str)];
+else
+    if length(const_val) == 1 
+        if Simulink.data.isSupportedEnumClass(class(const_val))
+            % Special Handling for Enumerations
+            if Simulink.data.getEnumTypeInfo(class(const_val), &apos;AddClassNameToEnumNames&apos;)
+                str = [relop, &apos; &apos;, strtrim(const_str)];
+            else
+                str = [relop, &apos; &apos;, char(const_val)];
+            end
+        elseif(isfloat(const_val) || isinteger(const_val) || islogical(const_val)) 
+                str = [relop, &apos; &apos;, num2str(const_val)];
+        end
+    end
+end</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>graphic_plane:4</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="b4f6c3de-6de4-4c6c-85ef-d0282b151e4f">
+      <blockPath>graphic_plane/Flat Earth to LLA/LatLong wrap/Latitude Wrap 90</blockPath>
+      <id>graphic_plane:4:108:771</id>
+      <masks type="slsa.mm.maskTree.Mask" uuid="3bfee712-8a35-4119-aed4-2433465072cf">
+        <initializationCode>aeroicon(&apos;aeroblk&apos;)</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>graphic_plane:4</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="dac4716a-2ed1-47b4-97eb-150ae8c59556">
+      <blockPath>graphic_plane/Flat Earth to LLA/LatLong wrap/Latitude Wrap 90/Wrap Angle 180</blockPath>
+      <id>graphic_plane:4:108:771:722</id>
+      <masks type="slsa.mm.maskTree.Mask" uuid="e004c6aa-9f73-403c-bbb5-9676028b11ee">
+        <initializationCode>aeroicon(&apos;aeroblk&apos;);</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>graphic_plane:4</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="ce09f7b2-a899-4ad4-8e56-15650012bdaa">
+      <blockPath>graphic_plane/Flat Earth to LLA/LatLong wrap/Latitude Wrap 90/Wrap Angle 180/Compare To Constant</blockPath>
+      <id>graphic_plane:4:108:771:722:772</id>
+      <masks type="slsa.mm.maskTree.Mask" uuid="4adaa2ff-d4fb-4037-9603-d4900946c959">
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="34cd7b79-ad33-48e6-b9a9-6c1d2cd73c23">
+          <expression>&gt;</expression>
+          <name>relop</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="fa104289-aebc-4cac-8f1f-ab1435bb5b29">
+          <evaluate>true</evaluate>
+          <expression>180</expression>
+          <isTunable>true</isTunable>
+          <name>const</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="0f5a59fb-8c4c-4945-894e-a923f5758989">
+          <expression>boolean</expression>
+          <name>OutDataTypeStr</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="32e884df-da91-4b0d-963e-9415c9f8f56c">
+          <expression>on</expression>
+          <name>ZeroCross</name>
+        </dialogParameters>
+        <initializationCode>blkName = gcb;
+
+if strcmp(get_param(gcbh,&apos;OutDataTypeStr&apos;),&apos;boolean&apos;)
+	setValue = &apos;boolean&apos;;
+else
+	setValue = &apos;fixdt(0, 8, 0)&apos;;
+end
+
+set_param([blkName,&apos;/Compare&apos;],&apos;relop&apos;,relop, ...
+	&apos;OutDataTypeStr&apos;, setValue, &apos;ZeroCross&apos;, ZeroCross);
+
+str = [relop,&apos; C&apos;]; %default
+
+const_str = get_param(blkName, &apos;const&apos;);
+const_val = str2num(const_str);
+
+if isempty(const_val) %#ok&lt;ST2NM&gt;
+    %Expression/Variable
+    str = [relop, &apos; &apos;, strtrim(const_str)];
+else
+    if length(const_val) == 1 
+        if Simulink.data.isSupportedEnumClass(class(const_val))
+            % Special Handling for Enumerations
+            if Simulink.data.getEnumTypeInfo(class(const_val), &apos;AddClassNameToEnumNames&apos;)
+                str = [relop, &apos; &apos;, strtrim(const_str)];
+            else
+                str = [relop, &apos; &apos;, char(const_val)];
+            end
+        elseif(isfloat(const_val) || isinteger(const_val) || islogical(const_val)) 
+                str = [relop, &apos; &apos;, num2str(const_val)];
+        end
+    end
+end</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>graphic_plane:4</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="03f34dba-874f-4dce-be8b-18fe01621306">
+      <blockPath>graphic_plane/Flat Earth to LLA/LatLong wrap/Latitude Wrap 90/Compare To Constant</blockPath>
+      <id>graphic_plane:4:108:771:754</id>
+      <masks type="slsa.mm.maskTree.Mask" uuid="3d2efbe4-c1cc-45a5-b267-c4e1ab7a090e">
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="8bd836eb-fd6a-4fe4-957c-226f4af33a58">
+          <expression>&gt;</expression>
+          <name>relop</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="534d97ca-1fdb-4259-b817-25392edc8b4f">
+          <evaluate>true</evaluate>
+          <expression>90</expression>
+          <isTunable>true</isTunable>
+          <name>const</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="740bc2db-1aad-4daa-aeb8-a9abcbec4b8b">
+          <expression>boolean</expression>
+          <name>OutDataTypeStr</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="bcdb7283-d07a-4a04-962e-f7110805877c">
+          <expression>on</expression>
+          <name>ZeroCross</name>
+        </dialogParameters>
+        <initializationCode>blkName = gcb;
+
+if strcmp(get_param(gcbh,&apos;OutDataTypeStr&apos;),&apos;boolean&apos;)
+	setValue = &apos;boolean&apos;;
+else
+	setValue = &apos;fixdt(0, 8, 0)&apos;;
+end
+
+set_param([blkName,&apos;/Compare&apos;],&apos;relop&apos;,relop, ...
+	&apos;OutDataTypeStr&apos;, setValue, &apos;ZeroCross&apos;, ZeroCross);
+
+str = [relop,&apos; C&apos;]; %default
+
+const_str = get_param(blkName, &apos;const&apos;);
+const_val = str2num(const_str);
+
+if isempty(const_val) %#ok&lt;ST2NM&gt;
+    %Expression/Variable
+    str = [relop, &apos; &apos;, strtrim(const_str)];
+else
+    if length(const_val) == 1 
+        if Simulink.data.isSupportedEnumClass(class(const_val))
+            % Special Handling for Enumerations
+            if Simulink.data.getEnumTypeInfo(class(const_val), &apos;AddClassNameToEnumNames&apos;)
+                str = [relop, &apos; &apos;, strtrim(const_str)];
+            else
+                str = [relop, &apos; &apos;, char(const_val)];
+            end
+        elseif(isfloat(const_val) || isinteger(const_val) || islogical(const_val)) 
+                str = [relop, &apos; &apos;, num2str(const_val)];
+        end
+    end
+end</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>graphic_plane:4</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="119c0eeb-7904-489b-8e2b-d26c26408d21">
+      <blockPath>graphic_plane/Flat Earth to LLA/LatLong wrap1</blockPath>
+      <id>graphic_plane:4:109</id>
+      <masks type="slsa.mm.maskTree.Mask" uuid="485f932f-e582-45fc-a82c-07af20ec1059">
+        <initializationCode>aeroicon(&apos;aeroblk&apos;)</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>graphic_plane:4</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="b68dd214-9a0e-4e0e-b0e9-e192d4a915f8">
+      <blockPath>graphic_plane/Flat Earth to LLA/LatLong wrap1/Wrap Longitude</blockPath>
+      <id>graphic_plane:4:109:750</id>
+      <masks type="slsa.mm.maskTree.Mask" uuid="a05f62fe-5f40-4b52-b487-58d3eabe2272">
+        <initializationCode>aeroicon(&apos;aeroblk&apos;);</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>graphic_plane:4</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="ab520d15-74d1-426f-95a1-40b2430a0424">
+      <blockPath>graphic_plane/Flat Earth to LLA/LatLong wrap1/Wrap Longitude/Compare To Constant</blockPath>
+      <id>graphic_plane:4:109:750:772</id>
+      <masks type="slsa.mm.maskTree.Mask" uuid="97ea1e94-2827-4fe3-9064-f9a7f5b98333">
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="0da63eb6-3d99-4db4-812d-a6da6d48f14c">
+          <expression>&gt;</expression>
+          <name>relop</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="8d24d833-df47-441e-b62f-cdccafebb521">
+          <evaluate>true</evaluate>
+          <expression>180</expression>
+          <isTunable>true</isTunable>
+          <name>const</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="a468f49c-8cb9-415a-87df-9f0a5c548541">
+          <expression>boolean</expression>
+          <name>OutDataTypeStr</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="94e57653-30d5-4d6f-97f5-288ac417dbb3">
+          <expression>on</expression>
+          <name>ZeroCross</name>
+        </dialogParameters>
+        <initializationCode>blkName = gcb;
+
+if strcmp(get_param(gcbh,&apos;OutDataTypeStr&apos;),&apos;boolean&apos;)
+	setValue = &apos;boolean&apos;;
+else
+	setValue = &apos;fixdt(0, 8, 0)&apos;;
+end
+
+set_param([blkName,&apos;/Compare&apos;],&apos;relop&apos;,relop, ...
+	&apos;OutDataTypeStr&apos;, setValue, &apos;ZeroCross&apos;, ZeroCross);
+
+str = [relop,&apos; C&apos;]; %default
+
+const_str = get_param(blkName, &apos;const&apos;);
+const_val = str2num(const_str);
+
+if isempty(const_val) %#ok&lt;ST2NM&gt;
+    %Expression/Variable
+    str = [relop, &apos; &apos;, strtrim(const_str)];
+else
+    if length(const_val) == 1 
+        if Simulink.data.isSupportedEnumClass(class(const_val))
+            % Special Handling for Enumerations
+            if Simulink.data.getEnumTypeInfo(class(const_val), &apos;AddClassNameToEnumNames&apos;)
+                str = [relop, &apos; &apos;, strtrim(const_str)];
+            else
+                str = [relop, &apos; &apos;, char(const_val)];
+            end
+        elseif(isfloat(const_val) || isinteger(const_val) || islogical(const_val)) 
+                str = [relop, &apos; &apos;, num2str(const_val)];
+        end
+    end
+end</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>graphic_plane:4</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="7ced62d3-e90d-460f-9ac5-1cf069c801c0">
+      <blockPath>graphic_plane/Flat Earth to LLA/LatLong wrap1/Latitude Wrap 90</blockPath>
+      <id>graphic_plane:4:109:771</id>
+      <masks type="slsa.mm.maskTree.Mask" uuid="34e771b0-d818-4f07-adf5-5cbb0b4b2d45">
+        <initializationCode>aeroicon(&apos;aeroblk&apos;)</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>graphic_plane:4</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="e34090a5-6da0-4a71-8e5d-d21c2ea66784">
+      <blockPath>graphic_plane/Flat Earth to LLA/LatLong wrap1/Latitude Wrap 90/Wrap Angle 180</blockPath>
+      <id>graphic_plane:4:109:771:722</id>
+      <masks type="slsa.mm.maskTree.Mask" uuid="8cc08663-42f4-42b7-ba1e-4f42aec2e6c6">
+        <initializationCode>aeroicon(&apos;aeroblk&apos;);</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>graphic_plane:4</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="0c6dc813-13fc-47b2-ae5b-628f535413b8">
+      <blockPath>graphic_plane/Flat Earth to LLA/LatLong wrap1/Latitude Wrap 90/Wrap Angle 180/Compare To Constant</blockPath>
+      <id>graphic_plane:4:109:771:722:772</id>
+      <masks type="slsa.mm.maskTree.Mask" uuid="e5f1067f-c827-4597-9383-070be4db25e3">
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="99baa233-0605-4295-b952-81bd9ad874bc">
+          <expression>&gt;</expression>
+          <name>relop</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="0503639e-04d0-4a58-8fdb-3f0ae24ce0c2">
+          <evaluate>true</evaluate>
+          <expression>180</expression>
+          <isTunable>true</isTunable>
+          <name>const</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="4c1154ff-57bd-4d92-a972-fb70ddec00ef">
+          <expression>boolean</expression>
+          <name>OutDataTypeStr</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="a9a5ed4e-da71-4429-a030-d13b96cc20a9">
+          <expression>on</expression>
+          <name>ZeroCross</name>
+        </dialogParameters>
+        <initializationCode>blkName = gcb;
+
+if strcmp(get_param(gcbh,&apos;OutDataTypeStr&apos;),&apos;boolean&apos;)
+	setValue = &apos;boolean&apos;;
+else
+	setValue = &apos;fixdt(0, 8, 0)&apos;;
+end
+
+set_param([blkName,&apos;/Compare&apos;],&apos;relop&apos;,relop, ...
+	&apos;OutDataTypeStr&apos;, setValue, &apos;ZeroCross&apos;, ZeroCross);
+
+str = [relop,&apos; C&apos;]; %default
+
+const_str = get_param(blkName, &apos;const&apos;);
+const_val = str2num(const_str);
+
+if isempty(const_val) %#ok&lt;ST2NM&gt;
+    %Expression/Variable
+    str = [relop, &apos; &apos;, strtrim(const_str)];
+else
+    if length(const_val) == 1 
+        if Simulink.data.isSupportedEnumClass(class(const_val))
+            % Special Handling for Enumerations
+            if Simulink.data.getEnumTypeInfo(class(const_val), &apos;AddClassNameToEnumNames&apos;)
+                str = [relop, &apos; &apos;, strtrim(const_str)];
+            else
+                str = [relop, &apos; &apos;, char(const_val)];
+            end
+        elseif(isfloat(const_val) || isinteger(const_val) || islogical(const_val)) 
+                str = [relop, &apos; &apos;, num2str(const_val)];
+        end
+    end
+end</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>graphic_plane:4</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="fbff134d-0945-4ae1-927d-2e53650181c1">
+      <blockPath>graphic_plane/Flat Earth to LLA/LatLong wrap1/Latitude Wrap 90/Compare To Constant</blockPath>
+      <id>graphic_plane:4:109:771:754</id>
+      <masks type="slsa.mm.maskTree.Mask" uuid="c2962ee8-fc7e-41e5-97ea-b71176794076">
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="d592d286-30b1-4137-abd7-55d111456896">
+          <expression>&gt;</expression>
+          <name>relop</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="15df7920-e0e6-49fd-a870-7cb1475b16e4">
+          <evaluate>true</evaluate>
+          <expression>90</expression>
+          <isTunable>true</isTunable>
+          <name>const</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="32ff1a6e-559b-4495-8fe8-6cf218ff86d6">
+          <expression>boolean</expression>
+          <name>OutDataTypeStr</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="ca7e21cb-7663-490c-8393-f04c18c3dd39">
+          <expression>on</expression>
+          <name>ZeroCross</name>
+        </dialogParameters>
+        <initializationCode>blkName = gcb;
+
+if strcmp(get_param(gcbh,&apos;OutDataTypeStr&apos;),&apos;boolean&apos;)
+	setValue = &apos;boolean&apos;;
+else
+	setValue = &apos;fixdt(0, 8, 0)&apos;;
+end
+
+set_param([blkName,&apos;/Compare&apos;],&apos;relop&apos;,relop, ...
+	&apos;OutDataTypeStr&apos;, setValue, &apos;ZeroCross&apos;, ZeroCross);
+
+str = [relop,&apos; C&apos;]; %default
+
+const_str = get_param(blkName, &apos;const&apos;);
+const_val = str2num(const_str);
+
+if isempty(const_val) %#ok&lt;ST2NM&gt;
+    %Expression/Variable
+    str = [relop, &apos; &apos;, strtrim(const_str)];
+else
+    if length(const_val) == 1 
+        if Simulink.data.isSupportedEnumClass(class(const_val))
+            % Special Handling for Enumerations
+            if Simulink.data.getEnumTypeInfo(class(const_val), &apos;AddClassNameToEnumNames&apos;)
+                str = [relop, &apos; &apos;, strtrim(const_str)];
+            else
+                str = [relop, &apos; &apos;, char(const_val)];
+            end
+        elseif(isfloat(const_val) || isinteger(const_val) || islogical(const_val)) 
+                str = [relop, &apos; &apos;, num2str(const_val)];
+        end
+    end
+end</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>graphic_plane:4</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="bea135f0-e0c8-49f1-b119-f06b6a5c364d">
+      <childrenIds>graphic_plane:1</childrenIds>
+      <childrenIds>graphic_plane:4</childrenIds>
+      <id>root</id>
+    </maskedBlocks>
+    <flags type="slsa.mm.maskTree.MaskTreeFlags" uuid="f406c3f3-117d-4dbc-93b9-0751f11e42ea"/>
+  </slsa.mm.maskTree.MaskTree>
+</MF0>

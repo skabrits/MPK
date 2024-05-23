@@ -10,19 +10,19 @@
   <orientation unit="DEG" frame="LOCAL">
     <yaw> 199.593 </yaw>
     <pitch> 13.5094 </pitch>
-    <roll> -1.02626 </roll>
+    <roll> -1.02625 </roll>
   </orientation>
 
   <velocity unit="FT/SEC" frame="LOCAL">
     <x> -77.816 </x>
     <y> -23.0626 </y>
-    <z> -9.48212 </z>
+    <z> -9.48211 </z>
   </velocity>
 
   <attitude_rate unit="DEG/SEC" frame="BODY">
-    <roll> 0.321251 </roll>
+    <roll> 0.321247 </roll>
     <pitch> -1.54076 </pitch>
-    <yaw> -0.274113 </yaw>
+    <yaw> -0.27411 </yaw>
   </attitude_rate>
 
 </initialize>

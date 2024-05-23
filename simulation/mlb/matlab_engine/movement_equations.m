@@ -1,0 +1,1 @@
+C:/Users/sevak/OneDrive/Документы/MATLAB/movement_equations.m

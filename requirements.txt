@@ -1,3 +1,5 @@
 PyYAML==6.0
 JSBSim==1.1.11
 numpy==1.21.6
+matplotlib
+matlabengineforpython===R2022a

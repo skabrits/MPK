@@ -1,0 +1,6 @@
+The argument '-tgtconn_server_info_file' passed to rtiostream_tcpip is not valid and will be ignored.
+The argument 'C:\Users\sevak\AppData\Local\Temp\tgtconnp98b22443_d31b_410f_aed3_0bd479279c74.info' passed to rtiostream_tcpip is not valid and will be ignored.
+The argument '-tgtconn_port' passed to rtiostream_tcpip is not valid and will be ignored.
+The argument '0' passed to rtiostream_tcpip is not valid and will be ignored.
+Firewall Rule Add failed: 80070057
+Warning: Model stop time is set to infinity. Simulation may run forever.
